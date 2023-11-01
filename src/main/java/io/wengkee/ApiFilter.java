@@ -27,7 +27,7 @@ class ApiFilter {
         Log.info("decodedKey: " + decodedKey);
         LOG.info("apikey: " + apikey);
 
-        if ( decodedKey == null || !decodedKey.equals(apikey)){
+        if (!decodedKey.equals(apikey)){
             throw new UnauthorizedException();
 //            throw new ForbiddenException();
         }
